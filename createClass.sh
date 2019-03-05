@@ -59,7 +59,7 @@ for i in "${@:2}"; do
     c=$((c+1))
 done
 echo "// ToString Method " >> $1.h
-printf "        void toString(); \n" >> $1.h
+printf "        void to_string(); \n" >> $1.h
 
 echo "}; " >> $1.h
 
@@ -107,8 +107,8 @@ for i in "${@:2}"; do
 done
 
 echo " " >> $1.h
-echo "//ToString " >> $1.h
-echo "void $1::toString() {" >> $1.h
+echo "// To_string " >> $1.h
+echo "void $1::to_string() {" >> $1.h
 
 for i in "${@:2}"; do
     if [ $((c%2)) -eq 0 ] 
