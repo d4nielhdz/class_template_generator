@@ -1,4 +1,5 @@
 #!/bin/bash
+# March 4th, 2019
 
 echo "#ifndef $1_h" > $1.h
 echo "#define $1_h" >> $1.h
