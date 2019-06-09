@@ -31,7 +31,7 @@ echo " " >> $1.h
 echo "// Public methods " >> $1.h
 printf "    public: \n" >> $1.h
 echo "// Constructor " >> $1.h
-printf "        $1::$1(); \n" >> $1.h
+printf "        $1(); \n" >> $1.h
 echo "//Getters " >> $1.h
 for i in "${@:2}"; do
     if [ $((c%2)) -eq 0 ] 
